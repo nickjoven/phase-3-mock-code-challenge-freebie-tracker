@@ -23,11 +23,11 @@ puts "Creating freebies..."
 # * and a freebie belongs to a company.                         *
 # ***************************************************************
 
-Freebie.create(item_name: "Water Bottle", value: 10, dev_id: 1, company_id: 1,)
-Freebie.create(item_name: "Hat", value: 12, dev_id: 2, company_id: 1,)
-Freebie.create(item_name: "Lanyard", value: 3, dev_id: 3, company_id: 2,)
-Freebie.create(item_name: "Sweater", value: 40, dev_id: 3, company_id: 3,)
-Freebie.create(item_name: "Beanie", value: 8, dev_id: 2, company_id: 4,)
-Freebie.create(item_name: "Mousepad", value: 9, dev_id: 1, company_id: 3,)
+Freebie.create(item_name: "Water Bottle", value: 10, dev_id: Dev.all.sample.id, company_id: Company.all.sample.id)
+Freebie.create(item_name: "Hat", value: 12, dev_id: Dev.all.sample.id, company_id: Company.all.sample.id)
+Freebie.create(item_name: "Lanyard", value: 3, dev_id: Dev.all.sample.id, company_id: Company.all.sample.id)
+Freebie.create(item_name: "Sweater", value: 40, dev_id: Dev.all.sample.id, company_id: Company.all.sample.id)
+Freebie.create(item_name: "Beanie", value: 8, dev_id: Dev.all.sample.id, company_id: Company.all.sample.id)
+Freebie.create(item_name: "Mousepad", value: 9, dev_id: Dev.all.sample.id, company_id: Company.all.sample.id)
 
 puts "Seeding done!"

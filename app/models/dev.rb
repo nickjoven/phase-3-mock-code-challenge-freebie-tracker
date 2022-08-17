@@ -4,7 +4,7 @@ class Dev < ActiveRecord::Base
 
     def received_one?(item_name)
         puts "Does #{self.name} own #{item_name}..?"
-        self.freebies.pluck(:item_name).include? item_name
+        freebies.pluck(:item_name).include? item_name
     end
 
     def give_away(dev, freebie)
